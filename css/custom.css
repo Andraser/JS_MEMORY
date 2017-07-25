@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.card {
+  float: left;
+  margin: 10px;
+  height: 200px;
+  width: 150px;
+  background: lightblue;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #ccc;
+}

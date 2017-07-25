@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Starter Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- css -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+   	<header>
+			<h1>Le jeu du Memory</h1>
+			<h2>par Bertrand Emery</h2>
+			<p>Retrouvez les 8 paires d'images en un minimum de coups !</p>
+		</header>
+		<aside>
+			<p>Nombre de coups joués : <span id="score">0</span></p>
+			<form id="formulaire">
+				<input type="button" value="Recommencer le jeu" onclick="recommencer(true);" />
+				<label for="selection">Changer le thème :</label>
+				<select id="selection" onchange="theme(this);">
+					<option value="defaut" selected>Oiseaux</option>
+					<option value="alternatif">Avions</option>
+				</select>
+			</form>
+		</aside>
+
+    <h1 class="text-center">Memory-Game</h1>
+    <div id="c1"><img id="i1" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    <div id="c2"><img id="i2" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    <div id="c3"><img id="i3" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    <div id="c4"><img id="i4" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    <div id="c5"><img id="i5" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    <div id="c6"><img id="i6" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    <div id="c7"><img id="i7" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    <div id="c8"><img id="i8" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    <div id="c9"><img id="i9" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    <div id="c10"><img id="i10" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    <div id="c11"><img id="i11" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    <div id="c12"><img id="i12" src="img/back.jpg" alt="" onclick="retourner(this);" /></div>
+    </section>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/paires.js"></script>
+</body>
+
+</html>
